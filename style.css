@@ -1,0 +1,100 @@
+body{box-sizing: border-box;
+margin:0;}
+.head{
+Width:100%;
+height:60vh;
+display: grid;
+grid-template-columns: 100%;
+grid-template-areas: 'head';
+background-color: gray;
+text-align: center;
+}
+.bg-image
+{background: darkgray url(https://media.istockphoto.com/photos/digital-numbers-background-concept-internet-connections-picture-id1135972828);
+background-position: center;
+background-size: cover;
+/* width:100vw; */
+/* height:100%; */
+color: white;font-size: 1.5rem;}
+.writeup
+{padding:5em;}
+.btn
+{border:1px solid white;
+background: gray;
+color:white;
+padding:0.5em;}
+.content1
+{display:grid;
+grid-template-columns: 20vw 20vw 20vw 20vw;
+grid-template-areas: 'title title title title' 
+                    'section1 section1 section2 section2'
+                    'section1 section1 section2 section2';
+grid-template-rows: 20vh 5vh 5vh ;
+background-color: darkturquoise;
+align-items: center;
+justify-content: center;
+width:100vw;
+height:35vh;
+column-gap: 3vw;line-height: 1.5;
+}
+.title
+{grid-area: title;
+text-align: center;}
+.section1
+{grid-area: section1;font-size: 1.1rem;}
+.section2
+{grid-area:section2;font-size: 1.1rem;}
+.content2
+{display:grid;
+grid-template-columns:25vw 25vw 25vw;
+grid-template-areas:'web mobile tech' 'web mobile tech' 'web mobile tech';
+background-color: darkslategrey;
+width:100vw;
+height:70vh;
+column-gap: 0.2em;
+justify-content: center;align-items: center;
+}
+.item
+{background-color: white;margin:1.5em;
+height:98%;}
+.web{grid-area:web;}
+.mobile{grid-area:mobile;}
+.tech{grid-area:tech}
+img{width:100%; height:40%;}
+.cont{padding:1em;font-size: 1.3rem;line-height: 1.2em;
+text-align:center ;}
+h3{text-align: center;}
+.content3
+{display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+/* padding:2em; */
+text-align: center;
+font-size: 1.3em;
+background-color: blueviolet;
+width:100vw;}
+.content4
+{display:grid;
+grid-template-columns: 50% 50%;
+grid-template-areas: 'contact company' 'contact company';
+text-align: center;
+font-size: 1.3em;
+width:100vw;color: white;
+}
+.contact
+{grid-area: contact;background-color: rgb(92, 187, 241);
+    padding:2em;}
+.company{grid-area:company; background-color: rgb(78, 78, 78);
+padding:2em;}
+footer{display:grid;grid-template-columns: 50% 50%;
+    grid-template-areas: 'acme acme1' 'acme acme1';
+    text-align: center;
+    font-size: 1.3em;
+    width:100vw;color: white;background-color: rgb(110, 110, 110);}
+.acme{grid-area:acme; 
+    padding:2em}.acme1{grid-area:acme1; 
+        padding:2em}
+
+
+
+
